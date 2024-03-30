@@ -3,6 +3,8 @@ using System.Text;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 
+namespace NetPerformanceBenchmarksRunner;
+
 [SimpleJob(RuntimeMoniker.Net70)]
 [MarkdownExporterAttribute.GitHub]
 [MemoryDiagnoser]

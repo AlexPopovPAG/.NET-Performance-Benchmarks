@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetPerformanceBenchmarksRunner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3dcb5724201820c341b8474cfb6e205d7a6b9f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetPerformanceBenchmarksRunner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetPerformanceBenchmarksRunner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

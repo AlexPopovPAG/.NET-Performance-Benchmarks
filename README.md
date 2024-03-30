@@ -483,3 +483,24 @@ Job=.NET 7.0  Runtime=.NET 7.0
 *Observations*:
 1. With C# 10 and higher, use string interpolation instead of string.Format, it allocates much less extra memory besides the final string
 2. Use DefaultInterpolatedStringHandler or StringBuilder in multiple concatenation statements
+
+**Logging extesnions and LoggerMessage**
+
+``` 
+BenchmarkDotNet v0.13.12, Windows 11 (10.0.22631.3296/23H2/2023Update/SunValley3)
+13th Gen Intel Core i7-13700HX, 1 CPU, 24 logical and 16 physical cores
+.NET SDK 8.0.101
+  [Host]   : .NET 8.0.1 (8.0.123.58001), X64 RyuJIT AVX2 [AttachedDebugger]
+  .NET 8.0 : .NET 8.0.1 (8.0.123.58001), X64 RyuJIT AVX2
+
+Job=.NET 8.0  Runtime=.NET 8.0
+
+```
+
+| Method                                | Mean     | Error   | StdDev  | Allocated |
+|-------------------------------------- |---------:|--------:|--------:|----------:|
+| LogInformation_WithMultipleValueTypes | 326.8 us | 6.45 us | 6.90 us |     955 B |
+| LoggerMessage_WithMultipleValueTypes  | 309.9 us | 6.14 us | 8.19 us |     608 B |
+
+*Observations*:
+1. Utilise LoggerMessage in hot path scenarios or low-level libraries to avoid unnecessary allocation due to boxing of value types

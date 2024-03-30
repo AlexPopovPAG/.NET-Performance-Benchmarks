@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NetPerformanceBenchmarksRunner
-build_property.ProjectDir = C:\Users\aleksey\Documents\STENN\.NET-Performance-Benchmarks\src\NetPerformanceBenchmarksRunner\
+build_property.ProjectDir = C:\Users\AlexPopov\Documents\repo\.NET-Performance-Benchmarks\src\NetPerformanceBenchmarksRunner\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
